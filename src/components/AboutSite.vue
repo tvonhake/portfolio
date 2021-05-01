@@ -7,16 +7,20 @@
     style="max-height: 100vh; max-width: 100vw"
   >
     <v-layout justify-center align-center column pa-5>
-      <v-layout row>
-        <v-flex xs12 class="text-xs-center white--text display-1 my-5"
-          >About This site</v-flex
+      <v-layout row mb-n16>
+        <v-flex xs12 mb-n16 class="text-xs-center white--text display-1"
+          >About This Site</v-flex
         >
       </v-layout>
-      <v-flex>
-        <div class="headline white--text mt-3">Built Using</div>
-        <p class="subheading white--text mt-3">
-          Vue Vuetify Material UI Netlify
-        </p>
+      <v-flex mt-n16>
+        <div class="headline white--text mt-3">Library:</div>
+        <p class="subheading white--text mt-3">Vue</p>
+        <div class="headline white--text mt-3">Styling:</div>
+        <p class="subheading white--text mt-3">Vuetify and Material Design</p>
+        <div class="headline white--text mt-3">Author:</div>
+        <p class="subheading white--text mt-3">Trevor von Hake</p>
+        <div class="headline white--text mt-3">Git Repository:</div>
+        <p class="subheading white--text mt-3">Trevor von Hake</p>
       </v-flex>
     </v-layout>
   </v-container>

@@ -7,7 +7,7 @@
     style="max-height: 100vh; max-width: 100vw"
   >
     <v-layout column pa-5 style="margin-top: 20px">
-      <v-layout row wrap mt-5 >
+      <v-layout row wrap mt-5>
         <v-flex xs12 sm12 md4>
           <v-card>
             <v-img src="https://i.imgur.com/6FL7jsq.png" height="500px">
