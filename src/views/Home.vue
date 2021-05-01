@@ -1,15 +1,16 @@
 <template>
-    <hello-world />
+  <span class="ma-0 pa-0">
+    <home-content class="ma-0 pa-0"></home-content>
+  </span>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld';
+import HomeContent from '../components/HomeContent.vue';
 
 export default {
-    name: 'Home',
-
-    components: {
-        HelloWorld,
-    },
+  name: 'home',
+  components: {
+    HomeContent,
+  },
 };
 </script>
