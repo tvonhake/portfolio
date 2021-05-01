@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid fill-height class="home-content">
+  <v-container fluid fill-height class="home-content" style="max-height: 100vh;">
     <v-layout justify-center align-center column pa-5>
       <div class="display-4 font-weight-black white--text text-xs-center">
         FULL STACK
@@ -8,7 +8,7 @@
         SOFTWARE ENGINEER
       </div>
       <div class="display-1 font-weight-bold white--text text-xs-center">
-        Passionate about making beautiful applications from start to finish.
+        Passionate about making beautiful applications from start to finish
       </div>
     </v-layout>
   </v-container>

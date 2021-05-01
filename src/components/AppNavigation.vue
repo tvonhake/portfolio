@@ -7,12 +7,19 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>{{ svgPath1 }}</v-icon>
+      <v-btn icon class="custom-btn">
+        <a href="https://github.com/tvonhake" class="icon-link" target="_blank"
+          ><v-icon>{{ Github }}</v-icon></a
+        >
       </v-btn>
 
-      <v-btn icon>
-        <v-icon>{{ svgPath2 }}</v-icon>
+      <v-btn icon class="custom-btn">
+        <a
+          href="https://www.linkedin.com/in/trevorvonhake/"
+          class="icon-link"
+          target="_blank"
+          ><v-icon>{{ LinkedIn }}</v-icon></a
+        >
       </v-btn>
     </v-app-bar>
 
@@ -20,7 +27,7 @@
       <v-list nav dense>
         <v-list-item-group
           v-model="group"
-          active-class="deep-purple--text text--accent-4"
+          active-class="blue-grey--text text--accent-4"
         >
           <v-list-item>
             <v-list-item-icon>
@@ -31,9 +38,47 @@
 
           <v-list-item>
             <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
+              <v-icon>{{ Account }}</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Account</v-list-item-title>
+            <v-list-item-title>About Me</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>{{ Folder }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Projects</v-list-item-title>
+          </v-list-item>
+
+          <a
+            href="https://github.com/tvonhake"
+            class="icon-link"
+            target="_blank"
+            ><v-list-item>
+              <v-list-item-icon>
+                <v-icon>{{ Github }}</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Github</v-list-item-title>
+            </v-list-item></a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/trevorvonhake/"
+            class="icon-link"
+            target="_blank"
+            ><v-list-item>
+              <v-list-item-icon>
+                <v-icon>{{ LinkedIn }}</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>LinkedIn</v-list-item-title>
+            </v-list-item></a
+          >
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>{{ Information }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>About This Site</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -42,17 +87,42 @@
 </template>
 
 <script>
-import { mdiGithub, mdiLinkedin } from '@mdi/js';
+import {
+  mdiAccountCircle,
+  mdiFolderMultipleOutline,
+  mdiGithub,
+  mdiInformation,
+  mdiLinkedin,
+} from '@mdi/js';
 
 export default {
   name: 'AppNavigation',
   data: () => ({
     drawer: false,
     group: null,
-    svgPath1: mdiGithub,
-    svgPath2: mdiLinkedin,
+    Github: mdiGithub,
+    LinkedIn: mdiLinkedin,
+    Folder: mdiFolderMultipleOutline,
+    Account: mdiAccountCircle,
+    Information: mdiInformation,
   }),
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.icon-link {
+  color: inherit;
+  text-decoration: none;
+}
+.icon-link:hover {
+  color: midnightblue;
+  text-decoration: none;
+}
+.custom-btn::before {
+  color: transparent;
+}
+
+.custom-btn:hover {
+  color: transparent;
+}
+</style>
