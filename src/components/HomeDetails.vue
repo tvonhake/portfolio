@@ -7,36 +7,249 @@
     style="max-height: 100vh; max-width: 100vw"
   >
     <v-layout justify-center align-center column pa-5>
-      <v-layout row>
-        <v-flex xs12 class="text-xs-center white--text display-1 my-5"
+      <v-row dense class="mb-n16">
+        <v-flex xs12 class="text-xs-center white--text display-1 my-5 mb-n16"
           >About Me</v-flex
         >
-      </v-layout>
-      <v-flex>
-        <div class="headline white--text mt-3">Skills</div>
-        <p class="subheading white--text mt-3">
-          Javascript React.js Vue Ruby Ruby on Rails HTML5 CSS3 Bootstrap
-          Semantic Material UI Postgresql Postman API
-        </p>
-      </v-flex>
-      <v-flex>
-        <div class="headline white--text mt-3">Education</div>
-        <p class="subheading white--text mt-3">
-          DevPoint Labs Full Stack Web Development - University of Utah BS
-          Psychology
-        </p>
-      </v-flex>
-      <v-flex>
-        <div class="headline white--text mt-3">Learn More</div>
-        <p class="subheading white--text mt-3">LinkedIn Github</p>
-      </v-flex>
+      </v-row>
+      <v-row dense class="mt-n16">
+        <v-btn
+          @click="
+            skills = true;
+            education = false;
+            learnmore = false;
+          "
+          class="mx-5"
+          >My Skills</v-btn
+        ><v-btn
+          @click="
+            skills = false;
+            education = true;
+            learnmore = false;
+          "
+          class="mx-5"
+          >Education</v-btn
+        ><v-btn
+          @click="
+            skills = false;
+            education = false;
+            learnmore = true;
+          "
+          class="ml-5"
+          >Learn More</v-btn
+        >
+      </v-row>
+      <div class="mt-n16" v-if="skills">
+        <v-row class="mt-n16">
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon
+                x-large
+                v-bind="attrs"
+                v-on="on"
+                color="yellow lighten-2"
+                >{{ Javascript }}</v-icon
+              >
+            </template>
+            <span>Javascript</span>
+          </v-tooltip>
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon
+                x-large
+                v-bind="attrs"
+                v-on="on"
+                color="light-blue lighten-3"
+                >{{ React }}</v-icon
+              >
+            </template>
+            <span>React.js</span>
+          </v-tooltip>
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon x-large v-bind="attrs" v-on="on" color="red lighten-1">{{
+                Ruby
+              }}</v-icon>
+            </template>
+            <span>Ruby</span>
+          </v-tooltip>
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon x-large v-bind="attrs" v-on="on" color="red darken-3">{{
+                RubyOnRails
+              }}</v-icon>
+            </template>
+            <span>Ruby on Rails</span>
+          </v-tooltip>
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon
+                x-large
+                v-bind="attrs"
+                v-on="on"
+                color="orange darken-4"
+                >{{ HTML5 }}</v-icon
+              >
+            </template>
+            <span>HTML5</span>
+          </v-tooltip>
+          <v-tooltip top>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon x-large v-bind="attrs" v-on="on" color="blue darken-2">{{
+                CSS
+              }}</v-icon>
+            </template>
+            <span>CSS3</span>
+          </v-tooltip>
+        </v-row>
+        <v-row class="mt-10">
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon
+                x-large
+                v-bind="attrs"
+                v-on="on"
+                color="deep-purple lighten-1"
+                >{{ Bootstrap }}</v-icon
+              >
+            </template>
+            <span>Bootstrap & React Bootstrap</span>
+          </v-tooltip>
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon x-large v-bind="attrs" v-on="on" color="teal lighten-3">{{
+                Semantic
+              }}</v-icon>
+            </template>
+            <span>Semantic UI</span>
+          </v-tooltip>
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon x-large v-bind="attrs" v-on="on" color="green darken-1">{{
+                Vue
+              }}</v-icon>
+            </template>
+            <span>Vue.js</span>
+          </v-tooltip>
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon
+                x-large
+                v-bind="attrs"
+                v-on="on"
+                color="light-blue lighten-1"
+                >{{ VSCode }}</v-icon
+              >
+            </template>
+            <span>Visual Studio Code</span>
+          </v-tooltip>
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon x-large v-bind="attrs" v-on="on" color="white">{{
+                GitHub
+              }}</v-icon>
+            </template>
+            <span>GitHub</span>
+          </v-tooltip>
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon
+                x-large
+                v-bind="attrs"
+                v-on="on"
+                color="deep-orange darken-1"
+                >{{ MSO }}</v-icon
+              >
+            </template>
+            <span>Microsoft Office</span>
+          </v-tooltip>
+        </v-row>
+      </div>
+      <div class="mt-n8" v-if="education">
+        <v-row class="mt-n16">
+          <h2 class="white--text">
+            Devpoint Labs Full Stack Web Development - April 2021
+          </h2>
+        </v-row>
+        <v-row>
+          <h2 class="white--text">
+            University of Utah BS Psychology - May 2022
+          </h2>
+        </v-row>
+      </div>
+      <div class="mt-n15" v-if="learnmore">
+        <v-row class="mt-n16">
+          <v-btn
+            x-large
+            color="transparent"
+            depressed
+            dark
+            href="https://www.linkedin.com/in/trevorvonhake/"
+            target="_blank"
+          >
+            <v-icon x-large color="blue-grey lighten-2">{{ LinkedIn }}</v-icon
+            >LinkedIn
+          </v-btn>
+        </v-row>
+        <v-row mt-16>
+          <v-btn
+            x-large
+            color="transparent"
+            depressed
+            dark
+            href="/https://github.com/tvonhake"
+            target="_blank"
+            class="git-btn"
+          >
+            <v-icon x-large>{{ GitHub }}</v-icon
+            >GitHub
+          </v-btn>
+        </v-row>
+      </div>
+      <v-spacer />
     </v-layout>
   </v-container>
 </template>
 
 <script>
+import {
+  mdiBootstrap,
+  mdiGithub,
+  mdiLanguageCss3,
+  mdiLanguageHtml5,
+  mdiLanguageJavascript,
+  mdiLanguageRuby,
+  mdiLanguageRubyOnRails,
+  mdiLinkedin,
+  mdiMicrosoftOffice,
+  mdiMicrosoftVisualStudioCode,
+  mdiReact,
+  mdiSemanticWeb,
+  mdiVuejs,
+  mdiVuetify,
+} from '@mdi/js';
+
 export default {
   name: 'HomeDetails',
+  data: () => ({
+    skills: true,
+    education: false,
+    learnmore: false,
+    Javascript: mdiLanguageJavascript,
+    React: mdiReact,
+    Ruby: mdiLanguageRuby,
+    RubyOnRails: mdiLanguageRubyOnRails,
+    Vue: mdiVuejs,
+    Vuetify: mdiVuetify,
+    Bootstrap: mdiBootstrap,
+    Semantic: mdiSemanticWeb,
+    GitHub: mdiGithub,
+    VSCode: mdiMicrosoftVisualStudioCode,
+    HTML5: mdiLanguageHtml5,
+    CSS: mdiLanguageCss3,
+    MSO: mdiMicrosoftOffice,
+    LinkedIn: mdiLinkedin,
+  }),
 };
 </script>
 
@@ -45,5 +258,15 @@ export default {
   background-color: rgb(54, 54, 54);
   width: 100% !important;
   height: 100%;
+}
+.v-icon {
+  margin: 0px 10px 0px 10px;
+}
+.div {
+  margin: 0;
+  padding: 0;
+}
+.git-btn {
+  padding-right: 100px;
 }
 </style>
