@@ -1,5 +1,6 @@
 <template>
   <v-container
+    fluid
     fill-height
     class="projects"
     grid-list-lg
@@ -7,7 +8,9 @@
   >
     <v-layout column pa-5>
       <v-layout row>
-        <v-flex xs12 class="text-xs-center white--text display-1 font-weight-black my-5"
+        <v-flex
+          xs12
+          class="text-xs-center white--text display-1 font-weight-black my-5"
           >Projects</v-flex
         >
       </v-layout>
@@ -83,7 +86,5 @@ export default {
   background-size: cover;
   width: 100% !important;
   height: 100%;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 </style>

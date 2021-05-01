@@ -9,7 +9,7 @@
 <script>
 import HomeContent from '../components/HomeContent.vue';
 import HomeDetails from '../components/HomeDetails.vue';
-import Projects from '../components/Projects.vue'
+import Projects from '../components/Projects.vue';
 
 export default {
   name: 'home',
