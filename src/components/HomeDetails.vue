@@ -1,79 +1,34 @@
 <template>
-  <v-container>
-    <v-layout column>
-      <v-flex class="display-2 text-xs-center my-5">Big Title Goes Here</v-flex>
+  <v-container
+    fluid
+    fill-height
+    grid-list-lg
+    class="home-details"
+    style="max-height: 100vh; max-width: 100vw"
+  >
+    <v-layout justify-center align-center column pa-5>
+      <v-layout row>
+        <v-flex xs12 class="text-xs-center white--text display-1 my-5"
+          >About Me</v-flex
+        >
+      </v-layout>
       <v-flex>
-        <div class="headline mt-3">Lorem ipsum</div>
-        <p class="subheading mt-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar
-          risus quis mauris interdum, in euismod nibh pretium. Etiam pulvinar
-          tincidunt dapibus. Quisque sollicitudin, mauris a consequat
-          consectetur, turpis nisl sollicitudin enim, id consectetur neque neque
-          nec metus. Pellentesque dolor nisi, vulputate quis lobortis ac,
-          tincidunt et quam. Mauris pulvinar blandit nisi nec mattis. Aliquam
-          accumsan ut sem eget efficitur. Vivamus in tortor gravida eros laoreet
-          condimentum nec vel dui. Nullam quam massa, ultrices eget tincidunt a,
-          pulvinar ac libero.
+        <div class="headline white--text mt-3">Skills</div>
+        <p class="subheading white--text mt-3">
+          Javascript React.js Vue Ruby Ruby on Rails HTML5 CSS3 Bootstrap
+          Semantic Material UI Postgresql Postman API
         </p>
       </v-flex>
       <v-flex>
-        <div class="headline mt-3">Lorem ipsum</div>
-        <p class="subheading mt-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar
-          risus quis mauris interdum, in euismod nibh pretium. Etiam pulvinar
-          tincidunt dapibus. Quisque sollicitudin, mauris a consequat
-          consectetur, turpis nisl sollicitudin enim, id consectetur neque neque
-          nec metus. Pellentesque dolor nisi, vulputate quis lobortis ac,
-          tincidunt et quam. Mauris pulvinar blandit nisi nec mattis. Aliquam
-          accumsan ut sem eget efficitur. Vivamus in tortor gravida eros laoreet
-          condimentum nec vel dui. Nullam quam massa, ultrices eget tincidunt a,
-          pulvinar ac libero.
-        </p>
-
-        <p class="subheading mt-3">
-          Nullam nec massa eu est fringilla lobortis. Praesent in enim in justo
-          blandit varius. Cras placerat arcu in sapien rhoncus aliquet. Sed
-          interdum tortor et tincidunt condimentum. Etiam consequat mi leo, in
-          suscipit odio scelerisque molestie. Nam et purus consequat, iaculis
-          augue vel, sagittis ligula. Vestibulum aliquet vulputate erat.
-          Phasellus id mauris mauris. Nunc a maximus dolor. Curabitur ut
-          vestibulum arcu. Curabitur non lacus justo. Cras varius a magna in
-          semper. Nulla eros ante, consectetur faucibus sapien eu, rhoncus
-          imperdiet dui. Sed viverra iaculis nunc, id pulvinar massa egestas
-          vitae.
-        </p>
-
-        <p class="subheading mt-3">
-          Aenean erat metus, imperdiet eget nisl laoreet, venenatis ultricies
-          ante. In interdum ante vel dictum ullamcorper. Pellentesque habitant
-          morbi tristique senectus et netus et malesuada fames ac turpis
-          egestas. Integer sit amet gravida diam. Aliquam in tempor metus. Fusce
-          pellentesque pharetra sem, et luctus justo tempor dictum. Ut feugiat
-          est sed tristique egestas. Nullam posuere a nunc in blandit.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-          posuere cubilia Curae; Suspendisse laoreet ultrices eros, nec
-          malesuada enim semper sit amet. Maecenas efficitur consectetur
-          accumsan. Etiam in aliquam turpis, ut pharetra nulla. Vestibulum
-          malesuada, nulla id elementum cursus, nibh dui rhoncus felis, suscipit
-          mattis felis enim sed ex. Pellentesque scelerisque aliquam lorem, vel
-          mattis nibh tincidunt ac. Suspendisse ac nibh sit amet lacus
-          ullamcorper maximus.
+        <div class="headline white--text mt-3">Education</div>
+        <p class="subheading white--text mt-3">
+          DevPoint Labs Full Stack Web Development - University of Utah BS
+          Psychology
         </p>
       </v-flex>
       <v-flex>
-        <div class="headline mt-3">Lorem ipsum</div>
-        <p class="subheading mt-3">
-          Nullam nec massa eu est fringilla lobortis. Praesent in enim in justo
-          blandit varius. Cras placerat arcu in sapien rhoncus aliquet. Sed
-          interdum tortor et tincidunt condimentum. Etiam consequat mi leo, in
-          suscipit odio scelerisque molestie. Nam et purus consequat, iaculis
-          augue vel, sagittis ligula. Vestibulum aliquet vulputate erat.
-          Phasellus id mauris mauris. Nunc a maximus dolor. Curabitur ut
-          vestibulum arcu. Curabitur non lacus justo. Cras varius a magna in
-          semper. Nulla eros ante, consectetur faucibus sapien eu, rhoncus
-          imperdiet dui. Sed viverra iaculis nunc, id pulvinar massa egestas
-          vitae.
-        </p>
+        <div class="headline white--text mt-3">Learn More</div>
+        <p class="subheading white--text mt-3">LinkedIn Github</p>
       </v-flex>
     </v-layout>
   </v-container>
@@ -85,4 +40,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.home-details {
+  background-color: rgb(54, 54, 54);
+  width: 100% !important;
+  height: 100%;
+}
+</style>

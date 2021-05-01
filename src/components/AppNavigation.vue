@@ -1,27 +1,8 @@
 <template>
   <span>
-    <v-app-bar color="transparent" flat class="pa-0" light>
+    <v-tool-bar color="transparent" flat class="pa-0" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Trevor von Hake</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon class="custom-btn">
-        <a href="https://github.com/tvonhake" class="icon-link" target="_blank"
-          ><v-icon>{{ Github }}</v-icon></a
-        >
-      </v-btn>
-
-      <v-btn icon class="custom-btn">
-        <a
-          href="https://www.linkedin.com/in/trevorvonhake/"
-          class="icon-link"
-          target="_blank"
-          ><v-icon>{{ LinkedIn }}</v-icon></a
-        >
-      </v-btn>
-    </v-app-bar>
+    </v-tool-bar>
 
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>

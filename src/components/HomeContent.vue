@@ -1,13 +1,10 @@
 <template>
   <v-container fluid fill-height class="home-content" style="max-height: 100vh">
     <v-layout justify-center align-center column pa-5>
-      <div class="display-4 font-weight-black white--text text-xs-center">
-        FULL STACK
+      <div class="display-4 white--text text-xs-center mt-0">
+        Trevor von Hake
       </div>
-      <div class="display-4 font-weight-black white--text text-xs-center mb-3">
-        SOFTWARE ENGINEER
-      </div>
-      <div class="display-1 font-weight-bold white--text text-xs-center">
+      <div class="display-1 white--text text-xs-center mt-5">
         Passionate about making beautiful applications from start to finish
       </div>
     </v-layout>
