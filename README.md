@@ -1,4 +1,4 @@
-# portfolio
+# Trevor von Hake - Personal Portfolio Site
 
 ## Project setup
 ```
