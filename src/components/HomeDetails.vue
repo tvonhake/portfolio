@@ -200,7 +200,7 @@
             color="transparent"
             depressed
             dark
-            href="/https://github.com/tvonhake"
+            href="https://www.github.com/tvonhake"
             target="_blank"
             class="git-btn"
           >
