@@ -60,7 +60,7 @@
 
           <a
             href="https://github.com/tvonhake"
-            class="icon-link"
+            class="icon-link, text-decoration: none"
             target="_blank"
             ><v-list-item>
               <v-list-item-icon>
@@ -72,7 +72,7 @@
 
           <a
             href="https://www.linkedin.com/in/trevorvonhake/"
-            class="icon-link"
+            class="icon-link, text-decoration: none"
             target="_blank"
             ><v-list-item>
               <v-list-item-icon>
@@ -129,7 +129,7 @@ export default {
 
 <style scoped>
 .icon-link {
-  color: inherit;
+  color: transparent;
   text-decoration: none;
 }
 .icon-link:hover {

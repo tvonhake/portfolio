@@ -1,7 +1,7 @@
 <template>
   <v-container fluid fill-height class="home-content" style="max-height: 100vh">
     <v-layout justify-center align-center column pa-5>
-      <div class="display-4 white--text text-xs-center mt-0">
+      <div class="display-4 white--text text-xs-center mt-0 mr-n5">
         Trevor von Hake
       </div>
       <div class="display-1 white--text text-xs-center mt-5">
