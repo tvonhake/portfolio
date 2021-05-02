@@ -7,19 +7,20 @@
     style="max-height: 100vh; max-width: 100vw"
   >
     <v-layout justify-center align-center column pa-5>
-      <v-row dense class="mb-n16">
-        <v-flex xs12 class="text-xs-center white--text display-1 my-5 mb-n16"
+      <v-row dense class="row1">
+        <v-flex xs12 class="text-xs-center white--text display-1"
           >About Me</v-flex
         >
       </v-row>
-      <v-row dense class="mt-n16">
+      <v-row dense class="row2">
         <v-btn
           @click="
             skills = true;
             education = false;
             learnmore = false;
           "
-          class="mx-5"
+          dark
+          color="transparent"
           >My Skills</v-btn
         ><v-btn
           @click="
@@ -27,7 +28,8 @@
             education = true;
             learnmore = false;
           "
-          class="mx-5"
+          dark
+          color="transparent"
           >Education</v-btn
         ><v-btn
           @click="
@@ -35,12 +37,13 @@
             education = false;
             learnmore = true;
           "
-          class="ml-5"
+          dark
+          color="transparent"
           >Learn More</v-btn
         >
       </v-row>
-      <div class="mt-n16" v-if="skills">
-        <v-row class="mt-n16">
+      <div v-if="skills">
+        <v-row>
           <v-tooltip top>
             <template v-slot:activator="{ on, attrs }">
               <v-icon
@@ -63,7 +66,7 @@
                 >{{ React }}</v-icon
               >
             </template>
-            <span>React.js</span>
+            <span>React JS</span>
           </v-tooltip>
           <v-tooltip top>
             <template v-slot:activator="{ on, attrs }">
@@ -129,7 +132,7 @@
                 Vue
               }}</v-icon>
             </template>
-            <span>Vue.js</span>
+            <span>Vue</span>
           </v-tooltip>
           <v-tooltip bottom>
             <template v-slot:activator="{ on, attrs }">
@@ -165,20 +168,20 @@
           </v-tooltip>
         </v-row>
       </div>
-      <div class="mt-n8" v-if="education">
-        <v-row class="mt-n16">
-          <h2 class="white--text">
+      <div class="mt-n16" v-if="education">
+        <v-row class="dpl">
+          <p class="subheading my-10 white--text display-0">
             Devpoint Labs Full Stack Web Development - April 2021
-          </h2>
+          </p>
         </v-row>
-        <v-row>
-          <h2 class="white--text">
+        <v-row class="uofu">
+          <p class="subheading white--text display-0">
             University of Utah BS Psychology - May 2022
-          </h2>
+          </p>
         </v-row>
       </div>
-      <div class="mt-n15" v-if="learnmore">
-        <v-row class="mt-n16">
+      <div class="mt-n8" v-if="learnmore">
+        <v-row>
           <v-btn
             x-large
             color="transparent"
@@ -268,5 +271,46 @@ export default {
 }
 .git-btn {
   padding-right: 100px;
+}
+.row1 {
+  max-height: 100px;
+}
+.v-flex {
+  max-height: 100px;
+}
+.row2 {
+  max-height: 100px;
+  align-content: center;
+  justify-content: center;
+  margin: 0 0 100px 0;
+}
+.v-btn {
+  margin: 5px 0 5px 0;
+}
+.uofu {
+  background: url('https://i.imgur.com/HMJCxWB.png');
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  align-content: center;
+  justify-content: center;
+  width: 45vw;
+  height: 100%;
+  margin: 0px 0 10px 0;
+  padding: 0 50px 0 0;
+}
+.dpl {
+  background: url('https://i.imgur.com/Y0XPXwi.png');
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  align-content: center;
+  justify-content: center;
+  width: 45vw;
+  height: 100%;
+  margin: -50px 0 10px 0;
+  padding: 0 90px 0 0;
 }
 </style>
