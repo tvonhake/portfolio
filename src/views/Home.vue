@@ -95,7 +95,6 @@
 </template>
 
 <script>
-import AboutSite from '../components/AboutSite.vue';
 import HomeContent from '../components/HomeContent.vue';
 import HomeDetails from '../components/HomeDetails.vue';
 import Projects from '../components/Projects.vue';
@@ -113,7 +112,6 @@ export default {
     HomeContent,
     HomeDetails,
     Projects,
-    AboutSite,
   },
   data: () => ({
     drawer: false,
