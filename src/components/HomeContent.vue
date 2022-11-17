@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 .home-content {
-  background: url('http://source.unsplash.com/Dx9fxRylvMk');
+  background: url('http://source.unsplash.com/2Hzmz15wGik');
   background-size: cover;
   width: 100%;
   height: 100%;
